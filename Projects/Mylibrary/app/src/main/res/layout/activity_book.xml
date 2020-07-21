@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bookActivity"
+    android:padding="20sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonsRelLayout">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Add to Currently Reading"
+            android:id="@+id/btnCurrentReading"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Add to Want to Read"
+            android:id="@+id/btnWantToRead"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btnCurrentReading"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Add to Already Read"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btnAlreadyRead"
+            android:layout_below="@+id/btnWantToRead"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ButtonsRelLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstRelLayout">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="10dp"
+                android:id="@+id/book_image_2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_name_2"
+                android:textStyle="bold"
+                android:text="book name"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/book_image_2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/book_name_2"
+                android:textStyle="italic"
+                android:text="author name"
+                android:layout_toRightOf="@id/book_image_2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/book_author"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pages"
+                android:id="@+id/book_pages"
+                android:layout_below="@id/book_author"
+                android:layout_toRightOf="@id/book_image_2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstRelLayout"
+            android:layout_margin="20dp"
+            android:text="Description"
+            android:id="@+id/book_description"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

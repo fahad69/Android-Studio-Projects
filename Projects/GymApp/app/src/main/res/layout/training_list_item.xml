@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="280dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardCornerRadius="10dp"
+    android:padding="5dp"
+    android:layout_margin="15dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trainingName"
+            android:text="Training Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:id="@+id/trainingImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/trainingName"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trainingShortDescription"
+            android:text="Short Description"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/trainingImage"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

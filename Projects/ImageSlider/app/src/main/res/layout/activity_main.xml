@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City Name"
+        android:id="@+id/txtCityName"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tabLayout"
+        android:layout_below="@+id/txtCityName"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:id="@+id/citiesViewPager"
+        android:layout_below="@+id/tabLayout"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a city: "
+        android:id="@+id/txtExplain"
+        android:layout_below="@+id/citiesViewPager"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rgCities"
+        android:layout_below="@+id/txtExplain"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="London"
+            android:id="@+id/rbLondon"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dhaka"
+            android:id="@+id/rbDhaka"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tokyo"
+            android:id="@+id/rbTokyo"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Washington"
+            android:id="@+id/rbWashington"
+            />
+
+
+
+    </RadioGroup>
+
+</RelativeLayout>
